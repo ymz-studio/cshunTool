@@ -1,0 +1,37 @@
+{
+  "name": "cshun-picture-tool",
+  "version": "1.0.0",
+  "description": "长顺脱贫攻坚作战图制作工具",
+  "author": "wsq <mywsq961@gmail.com>",
+  "private": true,
+  "main": "main.js",
+  "build": {
+    "appId": "wsq.cool",
+    "directories": {
+      "buildResources": "static"
+    }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "material-design-icons-iconfont": "^3.0.3",
+    "nedb": "^1.8.0",
+    "nedb-promise": "^2.0.1",
+    "nuxt": "^1.4.0",
+    "pify": "^3.0.0",
+    "roboto-fontface": "^0.9.0",
+    "vuedraggable": "^2.16.0",
+    "vuetify": "^1.0.19"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "electron": "latest",
+    "electron-builder": "^20.8.1",
+    "electron-devtools-installer": "^2.2.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
