@@ -1,17 +1,17 @@
-# cshun-picture-tool
+# 长顺脱贫攻坚作战图制作工具
 
-> 长顺脱贫攻坚作战图制作工具
+![](http://ipic-1253962968.file.myqcloud.com/2018-06-14-180637.jpg)
+
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# development with vue devtools
-$ npm run dev
+$ yarn install
+$ yarn run dev
 
 # build for production
-$ npm run build
+$ yarn run build
 
-For detailed explanation on how things work, checkout [Nuxt.js](https://github.com/nuxt/nuxt.js), [Electron.js](https://electronjs.org/), and [electron-builder](https://www.electron.build/).
+```
+
+
