@@ -1,7 +1,14 @@
 <template>
 	<div class="con">
-		<div style="position: relative;">
-			<img v-if="curSrc" :src="curSrc" class="src-img">
+		<v-container v-if="!curSrc" fill-height>
+			<v-layout column align-center>
+				<img src="@/assets/img/picture.svg" style="margin-top:10%;height:50%;width:auto">
+				<v-spacer></v-spacer>
+				<span style="color:#909295">2018 &copy; 北京邮电大学 计算机学院</span>
+			</v-layout>
+		</v-container>
+		<div v-else style="position: relative;">
+			<img :src="curSrc" class="src-img">
 			<div id="canvas" :class="{effect}" @dragenter="onDragEnter" @dragleave="onDragLeave" @dragover.prevent="onDropOver" @drop="onDrop">
 				<item-list v-model="itemList" style="height:100%;width:100%"></item-list>
 			</div>

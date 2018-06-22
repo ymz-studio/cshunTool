@@ -1,7 +1,10 @@
 <template>
     <div>
-        <div v-for="(item,_id) in items" :key="_id" @click="chooseItem(item)"  :style="`position:absolute;left:${item.offsetX}%;top:${item.offsetY}%`">
-            <img :id="item._id" :src="item.src" @dragstart="onDrag(item,$event)">
+        <div v-for="(item,_id) in items" :key="_id" @click="chooseItem(item)" :style="`position:absolute;left:${item.offsetX}%;top:${item.offsetY}%`">
+            <div :draggable="true" @dragstart="onDrag(item,$event)" style="position:relative">
+                <img :id="item._id" :src="item.src">
+                <span class="number">{{item.number}}</span>
+            </div>
         </div>
     </div>
 </template>
@@ -41,5 +44,12 @@ export default {
 <style scoped>
 img{
     cursor: pointer;
+}
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5em;
 }
 </style>

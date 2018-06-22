@@ -9,10 +9,7 @@
     "appId": "wsq.cool",
     "directories": {
       "buildResources": "static"
-    },
-    "nsis": {
-			"oneClick": false
-		}
+    }
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=DEV electron .",
